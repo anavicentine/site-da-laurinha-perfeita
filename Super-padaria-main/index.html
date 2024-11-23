@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pão na chapa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+        <header>
+            <img src="img/logo.png" alt="">
+            <h1 style="color: rgb(0, 0, 0);">Padaria Pão na chapa</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">inicio</a></li>
+                    <li><a href="#contato">instagram</a></li> <!---shift+alt e F deixa tudo indentado-->
+                    <li><a href="#sobre">sobre</a></li>
+                    <li><a href="#produtos">produtos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>bem vindo á Padaria Pão na Chapa</h2>
+                <p>Na padaria pão na chapa oferecemos o melhor pão caseiro, a melhor padaria da região com os melhores preços,
+                    nossos ingredientes são frescos e saudaveis, aqui os pães são assados diariamente.
+
+                </p>
+            </section>
+            <section>
+                <h2>nossos produtos</h2>
+                <div>
+                    <div>
+                        <h3>Pães</h3>
+                        <p>
+                            temos uma variedade de pães, como pão frances, pão de forma, baguetes e muito mais.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Bolo</h3>
+                        <p>
+                            oferecemos bolo fresquinhos, tortas e uma seleção de doces como sonhos, brigadeiros e brownies. 
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Salgados</h3>
+                        <p>
+                            seja para um lanche rapido ou uma festa nossos salgados são feitos na hora, com opções como coxinha, risoles, esfihas e muito mais. 
+                        </p>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+        <footer>
+
+
+
+            <section id="Contato">
+                <h2>Fale Conosco</h2>
+                <p>Entre em contato conosco preenchendo o formulário abaixo
+                    responderemos assim que possivel </p>
+                <p>Endereço: Rua dp pão, 123 - centro - São Paulo</p>
+
+                    <form id="form-contato">
+                        <div class="grupo">
+                            <p>nome:</p>
+                            <input 
+                            id="nome"
+                            type="text"
+                            placeholder="digite seu nome completo"
+                            required
+                            />
+
+                        </div>
+                        
+                        <div class="grupo">
+                            <p>Email:</p>
+                            <input 
+                            id="Email"
+                            type="Email"
+                            placeholder="digite seu Email"
+                            required
+                            />
+                        </div>
+
+                        <div class="grupo">
+                            <p>Telefone:</p>
+                            <input 
+                            id="telefone"
+                            type="tel"
+                            placeholder="digite seu Telefone"
+                            required
+                            />
+                        </div>
+
+                        <div class="grupo">
+                            <p>Mensagem</p>
+                            <textarea id="" 
+                            placeholder="Digite sua Mensagem"
+                            rows="5"
+                            cols="50"
+                            required></textarea>
+
+
+                            <button type="submit">Enviar Mensagem</button> 
+                            </div>
+                        </form>
+
+                        
+                        </textarea>
+                         
+                        </div>
+
+
+
+                    </form>
+
+            </section>
+        </footer>
+
+        <script>
+            const form = document.getElementById ("form-contato");
+
+            form.addEventListener('submit', function(event){
+                event.preventDefault();
+
+                const nome = document.getElementById ('nome').volue;
+                const email = document.getElementById ('email').volue;
+                const telefone = document.getElementById ('telefone').volue;
+                const mensagem = document.getElementById ('mensagem').volue;
+                alert("Dados do contato : \n" +
+                    "nome:" + nome + "\n" +
+                    "Email:" + Email + "\n" +
+                    "Telefone:" + Telefone + "\n" +
+                    "Mensagem:" + mensagem 
+                )
+                        })
+         </script>
+    
+</body>
+
+</html>
